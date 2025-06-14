@@ -23,7 +23,7 @@ def generate_dataset(num_samples=500):
 
     df = pd.DataFrame(data)
     df.to_csv("updated_dataset.csv", index=False)
-    print("✅ Dataset generated and saved as 'updated_dataset.csv'")
+    print("Dataset generated and saved as 'updated_dataset.csv'")
 
 # Run it
 if __name__ == "__main__":

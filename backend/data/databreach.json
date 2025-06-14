@@ -1,0 +1,122 @@
+
+ [
+  {
+    "email": "ajay@gmail.com",
+    "breaches": [
+      {
+        "source": "LinkedIn",
+        "date": "2012-05-05",
+        "details": "117 million emails leaked"
+      },
+      {
+        "source": "Adobe",
+        "date": "2013-10-04",
+        "details": "152 million accounts"
+      }
+    ]
+  },
+  {
+    "email": "bob@yahoo.com",
+    "breaches": [
+      {
+        "source": "MySpace",
+        "date": "2008-06-01",
+        "details": "360 million accounts"
+      }
+    ]
+  },
+  {
+    "email":"voradhruv180@gmail.com",
+    "breaches" :[
+        {
+        "source":"google",
+        "date" : "2016-09-13",
+        "details":"3000 million emails leaked"
+        }
+    ]
+  },
+  {
+    "email": "ajayjadhav0913@gmail.com",
+    "breaches": [
+      {
+        "source": "LinkedIn",
+        "date": "2012-05-05",
+        "details": "117 million emails leaked"
+      },
+      {
+        "source": "Adobe",
+        "date": "2013-10-04",
+        "details": "152 million accounts"
+      }
+    ]
+  },
+  {
+    "email": "rahul@yahoo.com",
+    "breaches": [
+      {
+        "source": "MySpace",
+        "date": "2008-06-01",
+        "details": "360 million accounts"
+      }
+    ]
+  },
+  {
+    "email":"dhandhukiyatushar7@gmail.com",
+    "breaches" :[
+        {
+        "source":"google",
+        "date" : "2016-09-13",
+        "details":"3000 million emails leaked"
+        }
+    ]
+  },
+  {
+    "email":"pandikuar@gmail.com",
+    "breaches" :[
+        {
+        "source":"google",
+        "date" : "2016-09-13",
+        "details":"3000 million emails leaked"
+        },
+        {
+        "source":"facebook",
+        "date" : "2024-09-13",
+        "details":"30 million emails leaked"
+      },
+        {
+        "source":"twitter",
+        "date" : "2024-09-13",
+        "details":"50 million emails leaked"
+        }]
+  },
+  {
+    "email":"shayinamd98@gmail.com",
+    "breaches":[{
+      "source":"youtube",
+      "date":"2021-04-03",
+      "details":"3 million emails leaked"
+    }],
+    "breaches2": [
+      {
+        "source": "instagram",
+        "date": "2022-05-15",
+        "details": "5 million accounts"
+      }
+    ]
+  },
+  {
+    "email": "ravikumarnk1810@gmail.com",
+    "breaches": [{
+      "source": "youtube",
+      "date": "2021-04-03",
+      "details": "3 million emails leaked"
+    }],
+    "breaches2": [
+      {
+        "source": "instagram",
+        "date": "2022-05-15",
+        "details": "5 million accounts"
+      }
+    ]
+  }
+]
