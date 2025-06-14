@@ -2,12 +2,17 @@ import sys
 import json
 import joblib
 import pandas as pd
+import os
 
-# Load model
-model = joblib.load("model.pkl")
+# Get the path to the directory where this script is located
+script_dir = os.path.dirname(__file__)
+model_path = os.path.join(script_dir, "model.pkl")
 
-# Read input arguments from command line
-# Example: python predict_email_risk.py 5 2 1 15
+# Load the model
+model = joblib.load(model_path)
+
+# Read input arguments
+# Usage example: python predict_email_risk.py 5 2 1 15
 args = sys.argv[1:]
 
 breach_count = int(args[0])
@@ -15,7 +20,7 @@ source_count = int(args[1])
 is_gmail = int(args[2])
 email_length = int(args[3])
 
-# Create dataframe
+# Create DataFrame
 df = pd.DataFrame([{
     "breach_count": breach_count,
     "source_count": source_count,
@@ -23,8 +28,8 @@ df = pd.DataFrame([{
     "email_length": email_length
 }])
 
-# Predict
+#  Predict risk
 prediction = model.predict(df)[0]
 
-# Output
+#  Print output as JSON
 print(json.dumps({"risk": int(prediction)}))
