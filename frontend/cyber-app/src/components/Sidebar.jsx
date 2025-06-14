@@ -10,7 +10,9 @@ const links = [
 
 export default function Sidebar() {
   const handleClick = (id) =>
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    document
+      .getElementById(id)
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
 
   return (
     <motion.aside
@@ -42,7 +44,9 @@ export default function Sidebar() {
         ))}
       </nav>
 
-      <div className="mt-auto text-xs text-gray-500 pt-8">© 2025 CyberScope</div>
+      <div className="mt-auto text-xs text-gray-500 pt-8">
+        © 2025 CyberScope
+      </div>
     </motion.aside>
   );
 }

@@ -12,12 +12,12 @@ export default function UserInputForm({ onSubmit, isLoading }) {
 
   React.useEffect(() => {
     const timer = setInterval(() => {
-      setWordIndex(i => (i + 1) % bannerWords.length);
+      setWordIndex((i) => (i + 1) % bannerWords.length);
     }, 2000);
     return () => clearInterval(timer);
   }, []);
 
-  const submit = e => {
+  const submit = (e) => {
     e.preventDefault();
     if (!email.includes("@")) return toast.error("Please enter a valid email!");
     onSubmit(email);
@@ -52,7 +52,7 @@ export default function UserInputForm({ onSubmit, isLoading }) {
         type="email"
         placeholder="you@example.com"
         value={email}
-        onChange={e => setEmail(e.target.value)}
+        onChange={(e) => setEmail(e.target.value)}
         className="w-full bg-[#111827] text-white px-4 py-3 rounded-md focus:ring-2 focus:ring-orange-400 transition"
       />
 
@@ -60,7 +60,7 @@ export default function UserInputForm({ onSubmit, isLoading }) {
         <Button
           type="submit"
           disabled={isLoading}
-          className="px-6 py-2 rounded-lg border border-orange-500 text-orange-400 hover:bg-orange-500 hover:text-black font-semibold transition"
+          className="px-6 py-2 rounded-lg border border-orange-500 text-orange-400 hover:bg-orange-500 hover:text-black font-semibold transition cursor-pointer"
         >
           {isLoading ? "Scanning…" : "Start Scan"}
         </Button>
